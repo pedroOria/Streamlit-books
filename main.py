@@ -16,7 +16,7 @@ selected_book = st.sidebar.selectbox('Seleccione un libro:', df['title'].unique(
 # Filtrar el DataFrame por el libro seleccionado
 selected_book_data = df[df['title'] == selected_book].iloc[0]
 
-# Mostrar información del libro seleccionado
+# Mostrar información del libro seleccionado 
 st.write('## Detalles del Libro Seleccionado')
 st.write(f'**Título:** {selected_book_data["title"]}')
 st.write(f'**Autor(es):** {selected_book_data["authors"]}')
@@ -25,8 +25,11 @@ st.write(f'**Año de Publicación:** {selected_book_data["published_year"]}')
 st.write(f'**Número de Páginas:** {selected_book_data["num_pages"]}')
 st.write(f'**Descripción:** {selected_book_data["description"]}')
 
-# Mostrar la imagen del libro
+# Mostrar la imagen de cada libro
 st.image(selected_book_data["thumbnail"], caption='Portada del Libro', width=200)
+
+# separador
+st.markdown("---")
 
 
 # Mostrar el sistema de recomendaciones
@@ -44,6 +47,4 @@ for book_title in recommendations['lista recomendada']:
 
     # Mostrar la imagen del libro recomendado
     st.image(recommended_book_data["thumbnail"], caption=f'Portada de "{book_title}"', width=150)
-
-
-
+    st.write("---")
