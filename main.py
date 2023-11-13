@@ -4,7 +4,7 @@ import pandas as pd
 from system_recomend import get_recomendations
 
 # Cargar el archivo CSV
-file_path = 'data_limpia.csv'  # Reemplaza con tu ruta de archivo
+file_path = 'data_limpia.csv'  
 df = pd.read_csv(file_path)
 
 # Encabezado de la aplicación
@@ -29,7 +29,7 @@ st.write(f'**Descripción:** {selected_book_data["description"]}')
 st.image(selected_book_data["thumbnail"], caption='Portada del Libro', width=200)
 
 
-# Resto de tu código Streamlit
+# Mostrar el sistema de recomendaciones
 st.title('Sistema de Recomendaciones de Libros')
 
 recommendations = get_recomendations(selected_book)
