@@ -1,13 +1,19 @@
 # STEP 1
-- Creamos nuestro entorno virtual donde instalamos las librerias streamlit, pandas y scikit-learn 
-- creamos nuestro archivo .gitignore
+- Crea un entorno virtual e instala las bibliotecas necesarias: streamlit, pandas y scikit-learn.
+- Crea el archivo .gitignore para ignorar archivos y directorios innecesarios.
+
 # STEP 2
-- Empezamos analizando los datos 
-- Hacemos transformaciones a los datos para su uso
+- Inicia el análisis de datos.
+- Realiza transformaciones en los datos para su preparación y uso.
+
 # STEP 3
-- Mediante la similitud coseno creare un sistema de recomendacion de libros que te recomendara por la descripcion del libro, eso con la libreria de scikit-learn
-- Luego con el archivo ´data_limpia.csv´ se usara para el archivo main que desplegara con streamlit
+- Implementa un sistema de recomendación de libros utilizando la similitud coseno con la biblioteca scikit-learn.
+- Utiliza el archivo `data_limpia.csv` generado para alimentar el archivo principal (`main.py`) que despliega la aplicación con Streamlit.
+
 # STEP 4
-- Creamos nuestro archivo ´main.py´ e importamos el sistema de recomendaciones creado en el archivo ´system_recomend.py´
-- Usamos streamlit share para desplegar el proyecto
+- Crea el archivo `main.py` que será la interfaz principal de la aplicación.
+- Importa el sistema de recomendaciones creado en el archivo `system_recomend.py`.
+- Utiliza Streamlit Share para desplegar y compartir tu proyecto.
+
+
 
