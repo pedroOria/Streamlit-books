@@ -14,6 +14,7 @@
 - Crea el archivo `main.py` que será la interfaz principal de la aplicación.
 - Importa el sistema de recomendaciones creado en el archivo `system_recomend.py`.
 - Utiliza Streamlit Share para desplegar y compartir tu proyecto.
+- [Enlace a la aplicación desplegada](https://app-books-vwpidmb8ehu3pqvasgoaut.streamlit.app/)
 
 
 
