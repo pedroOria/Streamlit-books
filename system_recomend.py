@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import linear_kernel
 def get_recomendations(titulo: str):
     i = pd.read_csv('data_limpia.csv')
     tfidf = TfidfVectorizer(stop_words='english')
-    i['descritpion'] = i["description"].fillna("")
+    i['description'] = i["description"].fillna("")
     tfidf_matrix = tfidf.fit_transform(i['description'])
     coseno_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
     indices = pd.Series(i.index, index=i['title'].str.lower()).drop_duplicates()
